@@ -2,7 +2,8 @@
 
 # Vehicle and License Plate Detection with YOLOv8
 
-This project combines YOLOv8 for vehicle and license plate detection with the SORT (Simple Online and Realtime Tracking) algorithm for vehicle tracking. It detects vehicles in a video stream using YOLOv8, tracks them across frames with SORT, and identifies license plates using another YOLOv5 model trained specifically for license plate detection. The project is implemented in Python using PyTorch and OpenCV.
+This repo includes the main project and the training module for the YOLOv8 model with custom dataset. 
+The project combines YOLOv8 for vehicle and license plate detection with the SORT (Simple Online and real-time tracking) algorithm for vehicle tracking. It detects vehicles in a video stream using YOLOv8, tracks them across frames with SORT, and identifies license plates using another YOLOv5 model trained specifically for license plate detection. The project is implemented in Python using PyTorch and OpenCV.
 
 ## Dependencies
 
@@ -19,11 +20,11 @@ The project performs the following tasks:
 
 1. **Vehicle Detection**: Uses a pre-trained YOLOv8 model to detect vehicles in a video stream. It draws bounding boxes around the detected vehicles.
 
-2. **Vehicle Tracking**: Utilizes the SORT algorithm to track the detected vehicles across frames. It assigns unique IDs to each vehicle for tracking.
+2. **Vehicle Tracking**: Utilizes the SORT algorithm to track the detected vehicles across frames. It assigns unique IDs to each detected vehicle for tracking.
 
-3. **License Plate Detection**: Employs a custom trained YOLOv8 model specifically for license plate detection to identify license plates on the detected vehicles. It draws bounding boxes around the license plates and displays the recognized license plate numbers.
+3. **License Plate Detection**: Employs a custom-trained YOLOv8 model specifically for license plate detection to identify license plates on the detected vehicles. It draws bounding boxes around the license plates and displays the recognized license plate numbers.
 
-4. **License Plate Recognition**: Utilizes EasyOCR to perform Optical Character Recognition (OCR) on the detected license plates and extract the alphanumeric characters.
+4. **License Plate Recognition**: Utilizes EasyOCR to perform Optical Character Recognition (OCR) on the detected license plates and extract the alphanumeric characters. The OCR_Use file is specified with the pattern of the Indian License plate.
    
 5. **Output Video**: Writes the processed frames with bounding boxes and license plate numbers to an output video file.
 
