@@ -2,7 +2,7 @@
 
 # Vehicle and License Plate Detection with YOLOv8
 
-This repo includes the main project and the training module for the YOLOv8 model with custom dataset. 
+This repo includes the main project and the training module for the YOLOv8 model with custom dataset. The training file has to be edited to fit the proper location of data.yaml file and the dataset location.
 The project combines YOLOv8 for vehicle and license plate detection with the SORT (Simple Online and real-time tracking) algorithm for vehicle tracking. It detects vehicles in a video stream using YOLOv8, tracks them across frames with SORT, and identifies license plates using another YOLOv5 model trained specifically for license plate detection. The project is implemented in Python using PyTorch and OpenCV.
 
 ## Dependencies
